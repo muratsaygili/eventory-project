@@ -65,17 +65,6 @@ if($_POST){
 
 
 }else {
-    global $uye_id;
-    echo $uye_id;
-    echo ",post yok,";
-
-    $res=mysqli_query($conn,"SHOW TABLE STATUS FROM eventory LIKE 'etkinlik' ");
-    $row=mysqli_fetch_array($res);
-    echo $row['Auto_increment'];
-
-    $etk_id=mysqli_fetch_array(mysqli_query($conn,"SELECT COUNT(*) FROM etkinlik "));
-    $etk_id=$etk_id[0]+1;
-    echo ",".$etk_id;
 }
 
 

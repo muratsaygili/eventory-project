@@ -156,7 +156,7 @@ require_once "config.php";
                                       <div class="col-md-4"></div>
                                       <div class="col-md-4"></div>
                                       <div class="col-md-4" style="text-align: right">
-                                          <a  href="dahasi.php"><p style="font-size: larger" >Daha fazlası için Tıklamanız yeterli...</p> </a>
+                                          <a  href="search_event.php"><p style="font-size: larger" >Daha fazlası için Tıklamanız yeterli...</p> </a>
                                       </div>
                                   </div>
                               </div>

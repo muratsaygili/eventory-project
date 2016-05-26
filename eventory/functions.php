@@ -279,11 +279,9 @@ function getFooter(){
                     </div>
                     <div class=\"col-md-4\">
                         <h3><i class=\"glyphicon glyphicon-new-window\"></i> Bağlantılar</h3>
-                        <p><a href=\"#\"> About ( Who we are )</a></p>
-                        <p><a href = \"\" > Services(What we do)</a ></p >
-                        <p><a href = \"#\" > Contact(Feel free to contact )</a ></p >
-                        <p><a href = \"#\" > Blog(Write to us )</a ></p >
-                        <p><a href = \"#\" > Team(Meet the Team )</a ></p >
+                        <p><a href=\"hakkimizda.php\"> Hakkımızda</a></p>
+                        <p><a href=\"nedir.php\" >  Ne nedir,Ne yapar</a ></p >
+                        <p><a href = \"iletisim.php\" > İletişim </a ></p >
                     </div >
                     <div class=\"col-md-4\">
                         <h3><i class=\"glyphicon glyphicon-heart fa fa-heart\"></i> Takip Et</h3>

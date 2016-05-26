@@ -14,9 +14,6 @@ $db       ="eventory";
 
 $conn=mysqli_connect($host,$user,$password,$db);
 
-if(!$conn){
-    header("Location:page_500.php");
-}
 
 // Check connection
 if (mysqli_connect_errno())

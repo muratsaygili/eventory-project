@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="941b980c-3e6f-4b33-8111-7817d0b716c2" name="Default" comment="" />
+    <list default="true" id="941b980c-3e6f-4b33-8111-7817d0b716c2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventory/.htaccess" afterPath="$PROJECT_DIR$/eventory/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventory/config.php" afterPath="$PROJECT_DIR$/eventory/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventory/show_event.php" afterPath="$PROJECT_DIR$/eventory/show_event.php" />
+    </list>
     <ignored path="gentelella.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -25,7 +30,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eventory/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769">
+            <state vertical-scroll-proportion="0.0">
               <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="8" selection-end-column="26" />
               <folding />
             </state>
@@ -36,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/eventory/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,7 +50,7 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eventory/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-156.92308">
+            <state vertical-scroll-proportion="0.0">
               <caret line="245" column="48" selection-start-line="245" selection-start-column="48" selection-end-line="245" selection-end-column="48" />
               <folding>
                 <marker date="1463862352025" expanded="true" signature="229:266" placeholder="SELECT * FRO..uyeler..." />
@@ -157,10 +162,9 @@
       <file leaf-file-name="search_event.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eventory/search_event.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.538462">
-              <caret line="127" column="94" selection-start-line="127" selection-start-column="94" selection-end-line="127" selection-end-column="94" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="138" column="62" selection-start-line="138" selection-start-column="62" selection-end-line="138" selection-end-column="62" />
               <folding>
-                <element signature="e#4709#4729#0#HTML" expanded="true" />
                 <marker date="1464043731835" expanded="true" signature="7482:7549" placeholder="SELECT * FRO..etkinlik..." />
                 <marker date="1464043731835" expanded="true" signature="7680:7702" placeholder="SELECT * FRO..etkinlik..." />
                 <marker date="1464043731835" expanded="true" signature="8015:8049" placeholder="SELECT * FRO..uyeler..." />
@@ -179,13 +183,12 @@
       <file leaf-file-name="create_event.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eventory/create_event.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="37" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
               <folding>
-                <marker date="1464030932952" expanded="true" signature="1279:1653" placeholder="INSERT INTO etkinlik..." />
-                <marker date="1464030932952" expanded="true" signature="1746:1934" placeholder="INSERT INTO adresler..." />
-                <marker date="1464030932952" expanded="true" signature="2511:2540" placeholder="SELECT COUNT..etkinlik..." />
-                <marker date="1464030932952" expanded="true" signature="9521:9543" placeholder="SELECT * FRO..kategori..." />
+                <marker date="1464183429563" expanded="true" signature="1279:1653" placeholder="INSERT INTO etkinlik..." />
+                <marker date="1464183429563" expanded="true" signature="1746:1934" placeholder="INSERT INTO adresler..." />
+                <marker date="1464183429563" expanded="true" signature="9175:9197" placeholder="SELECT * FRO..kategori..." />
               </folding>
             </state>
           </provider>
@@ -194,22 +197,28 @@
       <file leaf-file-name="show_event.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eventory/show_event.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27659574">
-              <caret line="84" column="52" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.76386404">
+              <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
               <folding>
-                <marker date="1464047212446" expanded="true" signature="1298:1334" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464047212446" expanded="true" signature="1298:1343" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464047212446" expanded="true" signature="2807:3011" placeholder="..." />
-                <marker date="1464047212446" expanded="true" signature="3060:3742" placeholder="..." />
-                <marker date="1464047212446" expanded="true" signature="3093:3521" placeholder="..." />
-                <marker date="1464047212446" expanded="true" signature="3151:3487" placeholder="..." />
-                <marker date="1464047212446" expanded="true" signature="3575:3709" placeholder="..." />
+                <marker date="1464218881482" expanded="true" signature="1298:1334" placeholder="SELECT * FRO..etkinlik..." />
+                <marker date="1464218881482" expanded="true" signature="1298:1343" placeholder="SELECT * FRO..etkinlik..." />
+                <marker date="1464218881482" expanded="true" signature="2773:2807" placeholder="SELECT * FRO..uyeler..." />
+                <marker date="1464218881482" expanded="true" signature="3161:3197" placeholder="SELECT * FRO..kategori..." />
+                <marker date="1464218881482" expanded="true" signature="3818:4462" placeholder="..." />
+                <marker date="1464218881482" expanded="true" signature="4511:5195" placeholder="..." />
+                <marker date="1464218881482" expanded="true" signature="4544:4972" placeholder="..." />
+                <marker date="1464218881482" expanded="true" signature="4602:4938" placeholder="..." />
+                <marker date="1464218881482" expanded="true" signature="5026:5162" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -220,21 +229,21 @@
         <option value="$PROJECT_DIR$/eventory/index.php" />
         <option value="$PROJECT_DIR$/eventory/cikis.php" />
         <option value="$PROJECT_DIR$/eventory/logout.php" />
-        <option value="$PROJECT_DIR$/eventory/config.php" />
         <option value="$PROJECT_DIR$/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js" />
         <option value="$PROJECT_DIR$/eventory/control.php" />
         <option value="$PROJECT_DIR$/eventory/login.php" />
         <option value="$PROJECT_DIR$/eventory/signup.php" />
         <option value="$PROJECT_DIR$/eventory/example.php" />
         <option value="$PROJECT_DIR$/eventory/search_events.php" />
-        <option value="$PROJECT_DIR$/eventory/.htaccess" />
         <option value="$PROJECT_DIR$/eventory/page_404.php" />
         <option value="$PROJECT_DIR$/eventory/functions.php" />
         <option value="$PROJECT_DIR$/eventory/functions.php" />
         <option value="$PROJECT_DIR$/vendors/datatables.net/js/jquery.dataTables.js" />
         <option value="$PROJECT_DIR$/eventory/create_event.php" />
-        <option value="$PROJECT_DIR$/eventory/create_event.php" />
         <option value="$PROJECT_DIR$/eventory/search_event.php" />
+        <option value="$PROJECT_DIR$/eventory/create_event.php" />
+        <option value="$PROJECT_DIR$/eventory/.htaccess" />
+        <option value="$PROJECT_DIR$/eventory/config.php" />
         <option value="$PROJECT_DIR$/eventory/show_event.php" />
       </list>
     </option>
@@ -279,18 +288,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gentelella" />
+              <option name="myItemId" value="eventory-project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gentelella" />
+              <option name="myItemId" value="eventory-project" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -300,21 +308,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gentelella" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="eventory-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eventory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gentelella" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -323,21 +317,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="eventory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_d76a6a98c9315931ec4927243517bc09e9b731a0/cmd/git.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="169" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="170" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="844" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="162" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="161" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="163" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="837" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -394,13 +403,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17715959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.008090615" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -434,27 +443,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eventory/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eventory/signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eventory/example.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eventory/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1059,7 +1047,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eventory/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="8" selection-end-column="26" />
           <folding />
         </state>
@@ -1076,9 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36525974">
           <caret line="432" column="27" selection-start-line="432" selection-start-column="27" selection-end-line="432" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,19 +1088,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eventory/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eventory/page_404.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56914896">
           <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1137,9 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.7949152">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1147,7 +1120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17288135">
           <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,15 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5151515">
           <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eventory/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,29 +1148,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.6538463">
           <caret line="59" column="39" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="39" />
-          <folding>
-            <marker date="1462828309479" expanded="true" signature="953:1023" placeholder="SELECT * FRO..uyeler..." />
-            <marker date="1462828309479" expanded="true" signature="1471:1575" placeholder="INSERT INTO uyeler..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eventory/create_event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="37" selection-end-column="43" />
-          <folding>
-            <marker date="1464030932952" expanded="true" signature="1279:1653" placeholder="INSERT INTO etkinlik..." />
-            <marker date="1464030932952" expanded="true" signature="1746:1934" placeholder="INSERT INTO adresler..." />
-            <marker date="1464030932952" expanded="true" signature="2511:2540" placeholder="SELECT COUNT..etkinlik..." />
-            <marker date="1464030932952" expanded="true" signature="9521:9543" placeholder="SELECT * FRO..kategori..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eventory/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-156.92308">
+        <state vertical-scroll-proportion="0.0">
           <caret line="245" column="48" selection-start-line="245" selection-start-column="48" selection-end-line="245" selection-end-column="48" />
           <folding>
             <marker date="1463862352025" expanded="true" signature="229:266" placeholder="SELECT * FRO..uyeler..." />
@@ -1320,12 +1266,70 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0635514">
+            <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eventory/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eventory/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02905983">
+          <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eventory/create_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+          <folding>
+            <marker date="1464183429563" expanded="true" signature="1279:1653" placeholder="INSERT INTO etkinlik..." />
+            <marker date="1464183429563" expanded="true" signature="1746:1934" placeholder="INSERT INTO adresler..." />
+            <marker date="1464183429563" expanded="true" signature="9175:9197" placeholder="SELECT * FRO..kategori..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eventory/search_event.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.538462">
-          <caret line="127" column="94" selection-start-line="127" selection-start-column="94" selection-end-line="127" selection-end-column="94" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="138" column="62" selection-start-line="138" selection-start-column="62" selection-end-line="138" selection-end-column="62" />
           <folding>
-            <element signature="e#4709#4729#0#HTML" expanded="true" />
             <marker date="1464043731835" expanded="true" signature="7482:7549" placeholder="SELECT * FRO..etkinlik..." />
             <marker date="1464043731835" expanded="true" signature="7680:7702" placeholder="SELECT * FRO..etkinlik..." />
             <marker date="1464043731835" expanded="true" signature="8015:8049" placeholder="SELECT * FRO..uyeler..." />
@@ -1342,16 +1346,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eventory/show_event.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27659574">
-          <caret line="84" column="52" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.76386404">
+          <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
           <folding>
-            <marker date="1464047212446" expanded="true" signature="1298:1334" placeholder="SELECT * FRO..etkinlik..." />
-            <marker date="1464047212446" expanded="true" signature="1298:1343" placeholder="SELECT * FRO..etkinlik..." />
-            <marker date="1464047212446" expanded="true" signature="2807:3011" placeholder="..." />
-            <marker date="1464047212446" expanded="true" signature="3060:3742" placeholder="..." />
-            <marker date="1464047212446" expanded="true" signature="3093:3521" placeholder="..." />
-            <marker date="1464047212446" expanded="true" signature="3151:3487" placeholder="..." />
-            <marker date="1464047212446" expanded="true" signature="3575:3709" placeholder="..." />
+            <marker date="1464218881482" expanded="true" signature="1298:1334" placeholder="SELECT * FRO..etkinlik..." />
+            <marker date="1464218881482" expanded="true" signature="1298:1343" placeholder="SELECT * FRO..etkinlik..." />
+            <marker date="1464218881482" expanded="true" signature="2773:2807" placeholder="SELECT * FRO..uyeler..." />
+            <marker date="1464218881482" expanded="true" signature="3161:3197" placeholder="SELECT * FRO..kategori..." />
+            <marker date="1464218881482" expanded="true" signature="3818:4462" placeholder="..." />
+            <marker date="1464218881482" expanded="true" signature="4511:5195" placeholder="..." />
+            <marker date="1464218881482" expanded="true" signature="4544:4972" placeholder="..." />
+            <marker date="1464218881482" expanded="true" signature="4602:4938" placeholder="..." />
+            <marker date="1464218881482" expanded="true" signature="5026:5162" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -1,4 +1,4 @@
 ErrorDocument 404 http://localhost/eventory-project/eventory/page_404.php
-
+ErrorDocument 500 http://localhost/eventory-project/eventory/page_500.php
 
 

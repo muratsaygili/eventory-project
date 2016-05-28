@@ -12,7 +12,6 @@ if($_GET){ //etkinliğe tıklanmadan gelindiyse önceki sayfasına yönlendireli
 
 }else if($_POST) {
 
-
 }else{
     header("Location: index.php");
 }
@@ -38,7 +37,7 @@ if($_GET){ //etkinliğe tıklanmadan gelindiyse önceki sayfasına yönlendireli
               <div style="height: 1000px">
                 <div class="row">
                   <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="x_panel" style="height:600px;">
+                    <div class="x_panel" style="height:auto;">
                       <div class="x_title">
                         <h2>Ayrıntılı Etkinlik Bilgileri</h2>
                         <div class="clearfix"></div>
@@ -104,8 +103,10 @@ if($_GET){ //etkinliğe tıklanmadan gelindiyse önceki sayfasına yönlendireli
                           $sqlUyeId="SELECT * FROM uyeler WHERE uye_id={$olusturan} ";
                           $rsUyeId=mysqli_query($conn,$sqlUyeId);
                           $ol_uye_ad="";
+                          $ol_mail="";
                           while ($rowUyeId = mysqli_fetch_assoc($rsUyeId)){
                               $ol_uye_ad=$rowUyeId['uye_ad']." ".$rowUyeId['uye_soyad'];
+                              $ol_mail=$rowUyeId['uye_email'];
                           }
 
                           $sqlKatId="SELECT * FROM kategori WHERE kat_id={$kat_id} ";
@@ -124,24 +125,40 @@ if($_GET){ //etkinliğe tıklanmadan gelindiyse önceki sayfasına yönlendireli
 
                       }
 
+                      $buy="";
+                      $gor="";
+                      if(!$flag){
+                          $buy="disabled='disabled' title='Üye girişi yapmalısınız !' ";
+                          $gor="disabled='disabled' title='Yalnızca etkinlik sahibi görebilir !' ";
+                      }else{
+                          if($uye_id!=$olusturan){
+                              $gor="disabled='disabled' title='Yalnızca etkinlik sahibi görebilir !' ";
+                          }
+                      }
+
+
                       echo "
                         <div class=\"col-md-3\">
                             <div class=\"row\"><img src=\"images/events/{$etk_afis}\" height=\"300px\" width=\"300px\"></div>
                             Organizatör: &nbsp&nbsp&nbsp&nbsp<strong>{$ol_uye_ad}</strong> <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp E-Mail: {$ol_mail} <br>
                             Kategori: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>{$kat_ad}</strong> <br>
                             Kapasite: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>{$etk_kapasite}</strong> <br>
                             Etkinlik ücreti: &nbsp<strong>{$etk_ucreti}</strong> <br>
                             Etkinlik adresi:
                             <strong>
                              {$no},{$sokak} sokak <br>
-                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp {$mahalle} mahallesi <br>
-                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp {$ilce}/{$il}<br>
-                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp {$ulke}</strong> <br>
-                            <form action='show_event.php' method='post'>
-                                <input type='hidden' name='etk_id' value='{$etk_id}'>
-                                <input type='hidden' name='uye_id' value='{$uye_id}'>
-                                <button type='submit' class='btn btn-success btn-lg'>BİLET AL</button>
-                            </form>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp {$mahalle} mahallesi <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp {$ilce}/{$il}<br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp {$ulke}</strong> <br>
+
+                            <input class=\"btn btn-success btn-lg col-sm-12\" {$buy} type=\"button\" value=\"BİLET AL\"
+				onclick=\"window.open('buy_ticket.php?event={$etk_id}','biletal',' width=400,height=600,left=300,top=30');\">
+
+                            <input class=\"btn btn-info btn-lg col-sm-12\" {$gor} type=\"button\" value=\"Katılımcıları Gör\"
+				onclick=\"window.open('katilimcilar.php?event={$etk_id}','katilimcilar',' width=500,height=600,left=300,top=30');\">
+
+
                         </div>
                         <div class=\"col-md-9\">
                             <h3>
@@ -154,78 +171,15 @@ if($_GET){ //etkinliğe tıklanmadan gelindiyse önceki sayfasına yönlendireli
                               <h1>{$etk_ad}</h1>
                               <p3>{$etk_detay}</p3>
                             </div>
+                            <div class='col-md-12'>
+                                <iframe
+                                  width=\"850\"
+                                  height=\"230\"
+                                  frameborder=\"1\" style=\"border:dotted\"
+                                  src=\"https://www.google.com/maps/embed/v1/place?key=AIzaSyAE9PGQz87pncyWuSCtijBJt3lcHZtFdxg&q={$no}+{$sokak}+{$mahalle},{$il}+{$ulke}\" allowfullscreen>
+                                </iframe>
+                            </div>
 
-                            <div class=\"x_panel\">
-                  <div class=\"x_title\">
-                    <h2><i class=\"fa fa-align-left\"></i> Katılımcı Listesi <small>Sessions</small></h2>
-                    <ul class=\"nav navbar-right panel_toolbox\">
-                      <li><a class=\"collapse-link\"><i class=\"fa fa-chevron-up\"></i></a>
-                      </li>
-                      <li class=\"dropdown\">
-                        <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\"><i class=\"fa fa-wrench\"></i></a>
-                        <ul class=\"dropdown-menu\" role=\"menu\">
-                          <li><a href=\"#\">Settings 1</a>
-                          </li>
-                          <li><a href=\"#\">Settings 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class=\"close-link\"><i class=\"fa fa-close\"></i></a>
-                      </li>
-                    </ul>
-                    <div class=\"clearfix\"></div>
-                  </div>
-                  <div class=\"x_content\">
-
-                    <!-- start accordion -->
-                    <div class=\"accordion\" id=\"accordion1\" role=\"tablist\" aria-multiselectable=\"true\">
-                      <div class=\"panel\">
-                        <a class=\"panel-heading collapsed\" role=\"tab\" id=\"headingOne1\" data-toggle=\"collapse\" data-parent=\"#accordion1\" href=\"#collapseOne1\" aria-expanded=\"false\" aria-controls=\"collapseOne\">
-                          <h4 class=\"panel-title\">Katılımcılar</h4>
-                        </a>
-                        <div id=\"collapseOne1\" class=\"panel-collapse collapse\" role=\"tabpanel\" aria-labelledby=\"headingOne\" aria-expanded=\"false\" style=\"height: 0px;\">
-                          <div class=\"panel-body\">
-                            <table class=\"table table-striped\">
-                              <thead>
-                                <tr>
-                                  <th>#</th>
-                                  <th>First Name</th>
-                                  <th>Last Name</th>
-                                  <th>Username</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope=\"row\">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                  <th scope=\"row\">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
-                                </tr>
-                                <tr>
-                                  <th scope=\"row\">3</th>
-                                  <td>Larry</td>
-                                  <td>the Bird</td>
-                                  <td>@twitter</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-
-
-                    </div>
-                    <!-- end of accordion -->
-
-
-                  </div>
-                </div>
                         </div>
                       ";
                       ?>

@@ -179,7 +179,7 @@ if($_POST){
                                     <div class="form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="kat_id">Kategori seçiniz</label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <select class="form-control" id="kat_id" name="kat_id">
+                                            <select class="form-control" id="kat_id" required="required" name="kat_id">
                                                 <?php //kategorileri listelemek için script
                                                 $sql="SELECT * FROM kategori";
                                                 $rs=mysqli_query($conn,$sql);
@@ -201,8 +201,8 @@ if($_POST){
                                     <div class="form-group">
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="etk_para_birimi">Para Birimi </label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <select class="form-control" id="etk_para_birimi" name="etk_para_birimi">
-                                                <option  value="lira">Türk Lirası</option>
+                                            <select class="form-control" id="etk_para_birimi" required="required" name="etk_para_birimi">
+                                                <option  value="TRY">Türk Lirası</option>
                                             </select>
                                         </div>
                                     </div>

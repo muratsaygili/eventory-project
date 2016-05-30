@@ -68,10 +68,10 @@ function getHeader(){
                     <i class=\"fa fa-angle-down\"></i>
                   </a>
                   <ul class=\"dropdown-menu dropdown-usermenu pull-right\">
-                    <li><a href=\"index.php\">  Profilim</a>
+                    <li><a href=\"profile.php\">  Profilim</a>
                     </li>
                     <li>
-                      <a href=\"javascript:;\">Biletlerim
+                      <a href=\"profile.php\">Biletlerim
                       </a>
                     </li>
                     <li>

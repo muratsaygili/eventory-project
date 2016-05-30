@@ -136,14 +136,21 @@ if($_GET){ //etkinliğe tıklanmadan gelindiyse önceki sayfasına yönlendireli
                           }
                       }
 
+                      $sqlKalan="SELECT COUNT(*) FROM bilet WHERE etk_id={$etk_id}";
+                      $rsKalan=mysqli_query($conn,$sqlKalan);
+                      $kalan=mysqli_fetch_array($rsKalan);
+                      $kalan=$etk_kapasite-$kalan[0];
+                      if($kalan==0){
+                          $buy="disabled='disabled' title='Bu etkinliğin biletleri tükenmiştir !' ";
+                      }
 
                       echo "
                         <div class=\"col-md-3\">
                             <div class=\"row\"><img src=\"images/events/{$etk_afis}\" height=\"300px\" width=\"300px\"></div>
                             Organizatör: &nbsp&nbsp&nbsp&nbsp<strong>{$ol_uye_ad}</strong> <br>
-                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp E-Mail: {$ol_mail} <br>
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp E-Mail: {$ol_mail} <br>
                             Kategori: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>{$kat_ad}</strong> <br>
-                            Kapasite: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>{$etk_kapasite}</strong> <br>
+                            Kapasite: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<strong>{$etk_kapasite} (Kalan bilet:{$kalan})</strong> <br>
                             Etkinlik ücreti: &nbsp<strong>{$etk_ucreti}</strong> <br>
                             Etkinlik adresi:
                             <strong>
@@ -156,7 +163,7 @@ if($_GET){ //etkinliğe tıklanmadan gelindiyse önceki sayfasına yönlendireli
 				onclick=\"window.open('buy_ticket.php?event={$etk_id}','biletal',' width=400,height=600,left=300,top=30');\">
 
                             <input class=\"btn btn-info btn-lg col-sm-12\" {$gor} type=\"button\" value=\"Katılımcıları Gör\"
-				onclick=\"window.open('katilimcilar.php?event={$etk_id}','katilimcilar',' width=500,height=600,left=300,top=30');\">
+				onclick=\"window.open('katilimcilar.php?event={$etk_id}','katilimcilar',' width=640,height=600,left=300,top=30');\">
 
 
                         </div>

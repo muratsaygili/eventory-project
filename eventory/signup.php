@@ -70,10 +70,20 @@ if ($user) {
             <input type="text" class="form-control" name="lname" placeholder="Soyad" required="required" />
           </div>
           <div>
+           <select class="form-control" required="required" name="cinsiyet">
+              <option  value="Erkek">Erkek</option>
+              <option  value="Kadın">Kadın</option>
+              <option  value="Diğer">Diğer</option>
+            </select>
+          </div><br>
+          <div>
             <input id="password" type="password" class="form-control" name="password" placeholder="Parola giriniz" required="required" />
           </div>
           <div>
             <input id="confirm_password" type="password" class="form-control" name="password2" placeholder="Parolayı tekrar giriniz" required="required" data-validate-pattern="password"/>
+          </div>
+          <div>
+            <input type="text" class="form-control" name="tel" placeholder="Telefon" required="required" />
           </div>
           <div>
             <input type="submit" class="btn btn-default btn-sm submit" value="Üye Ol">

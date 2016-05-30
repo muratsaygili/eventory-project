@@ -81,14 +81,26 @@ if($_GET){
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr class="odd" role="row">
-                                      <td class="sorting_1" tabindex="0">Airi</td>
-                                      <td>Satou</td>
-                                      <td>Accountant</td>
-                                      <td>Tokyo</td>
-                                    </tr>
                                     <?php
+                                    $sqlListe="SELECT * FROM bilet WHERE etk_id={$etk_id}";
+                                    $rsListe=mysqli_query($conn,$sqlListe);
+                                    while($rowListe=mysqli_fetch_array($rsListe)){
+                                      $rsUye=mysqli_query($conn,"SELECT * FROM uyeler WHERE uye_id={$rowListe['uye_id']}");
+                                      $rowUye=mysqli_fetch_array($rsUye);
+                                      $ad=$rowUye['uye_ad']." ".$rowUye['uye_soyad'];
+                                      $email=$rowUye['uye_email'];
+                                      $tel=$rowUye['uye_tel'];
+                                      $cinsiyet=$rowUye['uye_cinsiyet'];
 
+                                      echo "
+                                      <tr class=\"odd\" role=\"row\">
+                                        <td class=\"sorting_1\" tabindex=\"0\">{$ad}</td>
+                                        <td>{$email}</td>
+                                        <td>{$tel}</td>
+                                        <td>{$cinsiyet}</td>
+                                      </tr>
+                                      ";
+                                    }
                                     ?>
 
                       </tbody>

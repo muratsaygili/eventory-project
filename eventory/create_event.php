@@ -27,7 +27,12 @@ if($_POST){
     $etk_detay=$_POST['etk_detay'];
     $etk_kapasite=$_POST['etk_kapasite'];
 
-    $etk_afis=$_POST['etk_afis'];
+    if($_POST['etk_afis']==""){
+        $etk_afis="default_afis.png";
+    }else{
+        $etk_afis=$_POST['etk_afis'];
+    }
+
     $kat_id=$_POST['kat_id'];
     $etk_ucreti=$_POST['etk_ucreti'];
     $etk_para_birimi=$_POST['etk_para_birimi'];

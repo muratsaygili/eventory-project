@@ -47,8 +47,10 @@ if($ref=="login"){ // login sayfasından gelindiyse login işlemleri
     $password=$_POST['password'];
     $fname=$_POST['fname'];
     $lname=$_POST['lname'];
+    $cinsiyet=$_POST['cinsiyet'];
+    $tel=$_POST['tel'];
 
-    $sql="INSERT INTO uyeler (uye_email,uye_pass,uye_ad,uye_soyad) VALUES ('$email','$password','$fname','$lname')";
+    $sql="INSERT INTO uyeler (uye_email,uye_pass,uye_ad,uye_soyad,uye_tel,uye_cinsiyet) VALUES ('$email','$password','$fname','$lname','$tel','$cinsiyet')";
     $rs=mysqli_query($conn,$sql);
 
     if($rs){

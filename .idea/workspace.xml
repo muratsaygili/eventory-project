@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="941b980c-3e6f-4b33-8111-7817d0b716c2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eventory/images/events/yapim_asamasinda.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventory/search_event.php" afterPath="$PROJECT_DIR$/eventory/search_event.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventory/index.php" afterPath="$PROJECT_DIR$/eventory/index.php" />
     </list>
     <ignored path="gentelella.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +39,7 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eventory/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.65384614">
               <caret line="73" column="43" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
               <folding>
                 <marker date="1464643836440" expanded="true" signature="229:266" placeholder="SELECT * FRO..uyeler..." />
@@ -148,134 +149,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_event.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eventory/create_event.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eventory/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="181" column="29" selection-start-line="181" selection-start-column="29" selection-end-line="181" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.59671533">
+              <caret line="84" column="60" selection-start-line="84" selection-start-column="60" selection-end-line="84" selection-end-column="60" />
               <folding>
-                <marker date="1464648192690" expanded="true" signature="1371:1745" placeholder="INSERT INTO etkinlik..." />
-                <marker date="1464648192690" expanded="true" signature="1838:2026" placeholder="INSERT INTO adresler..." />
-                <marker date="1464648192690" expanded="true" signature="9287:9309" placeholder="SELECT * FRO..kategori..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show_event.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eventory/show_event.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="150" column="58" selection-start-line="150" selection-start-column="58" selection-end-line="150" selection-end-column="58" />
-              <folding>
-                <marker date="1464649655061" expanded="true" signature="1332:1368" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464649655061" expanded="true" signature="1332:1377" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464649655061" expanded="true" signature="1468:1504" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464649655061" expanded="true" signature="3550:3584" placeholder="SELECT * FRO..uyeler..." />
-                <marker date="1464649655061" expanded="true" signature="4040:4076" placeholder="SELECT * FRO..kategori..." />
-                <marker date="1464649655061" expanded="true" signature="5176:5216" placeholder="SELECT COUNT..bilet..." />
-                <marker date="1464649655061" expanded="true" signature="5176:5225" placeholder="SELECT COUNT..bilet..." />
-                <marker date="1464649655061" expanded="true" signature="5642:6909" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="5642:7173" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="5642:7392" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="5642:7423" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="6369:6902" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="7029:7142" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="7270:7390" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="7393:7417" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="7472:7985" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="7472:8654" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="7472:8685" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="7505:7933" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="7563:7899" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="7987:8123" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="8175:8653" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="8216:8551" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="8216:8618" placeholder="..." />
-                <marker date="1464649655061" expanded="true" signature="8374:8387" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eventory/profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="122" column="86" selection-start-line="122" selection-start-column="86" selection-end-line="122" selection-end-column="86" />
-              <folding>
-                <marker date="1464649277274" expanded="true" signature="2247:2283" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464649277274" expanded="true" signature="2247:2292" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464649277274" expanded="true" signature="2409:2449" placeholder="SELECT COUNT..bilet..." />
-                <marker date="1464649277274" expanded="true" signature="2757:2811" placeholder="..." />
-                <marker date="1464649277274" expanded="true" signature="2757:3149" placeholder="..." />
-                <marker date="1464649277274" expanded="true" signature="4532:5891" placeholder="..." />
-                <marker date="1464649277274" expanded="true" signature="4625:4658" placeholder="SELECT * FRO..bilet..." />
-                <marker date="1464649277274" expanded="true" signature="4797:4833" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464649277274" expanded="true" signature="4797:4850" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464649277274" expanded="true" signature="5122:5156" placeholder="SELECT * FRO..uyeler..." />
-                <marker date="1464649277274" expanded="true" signature="5122:5169" placeholder="SELECT * FRO..uyeler..." />
-                <marker date="1464649277274" expanded="true" signature="5409:5792" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buy_ticket.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eventory/buy_ticket.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="109" column="52" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="52" />
-              <folding>
-                <marker date="1464647647537" expanded="true" signature="1559:1631" placeholder="INSERT INTO bilet..." />
-                <marker date="1464647647537" expanded="true" signature="1559:1673" placeholder="INSERT INTO bilet..." />
-                <marker date="1464647647537" expanded="true" signature="1965:2001" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464647647537" expanded="true" signature="2566:2684" placeholder="..." />
-                <marker date="1464647647537" expanded="true" signature="2566:2855" placeholder="..." />
-                <marker date="1464647647537" expanded="true" signature="2566:2993" placeholder="..." />
-                <marker date="1464647647537" expanded="true" signature="2566:3346" placeholder="..." />
-                <marker date="1464647647537" expanded="true" signature="3043:3316" placeholder="..." />
-                <marker date="1464647647537" expanded="true" signature="3115:3285" placeholder="..." />
-                <marker date="1464647647537" expanded="true" signature="3537:4905" placeholder="..." />
-                <marker date="1464647647537" expanded="true" signature="4822:4840" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="katilimcilar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eventory/katilimcilar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
-              <folding>
-                <marker date="1464643440871" expanded="true" signature="198:234" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464643440871" expanded="true" signature="3765:3798" placeholder="SELECT * FRO..bilet..." />
-                <marker date="1464643440871" expanded="true" signature="3765:3807" placeholder="SELECT * FRO..bilet..." />
-                <marker date="1464643440871" expanded="true" signature="4034:4068" placeholder="SELECT * FRO..uyeler..." />
-                <marker date="1464643440871" expanded="true" signature="4034:4089" placeholder="SELECT * FRO..uyeler..." />
-                <marker date="1464643440871" expanded="true" signature="4570:4879" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_event.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eventory/search_event.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.062043797">
-              <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
-              <folding>
-                <marker date="1464731545426" expanded="true" signature="5245:5312" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464731545426" expanded="true" signature="5443:5465" placeholder="SELECT * FRO..etkinlik..." />
-                <marker date="1464731545426" expanded="true" signature="5778:5812" placeholder="SELECT * FRO..uyeler..." />
-                <marker date="1464731545426" expanded="true" signature="5778:5814" placeholder="SELECT * FRO..uyeler..." />
-                <marker date="1464731545426" expanded="true" signature="5778:5822" placeholder="SELECT * FRO..uyeler..." />
-                <marker date="1464731545426" expanded="true" signature="6304:6340" placeholder="SELECT * FRO..kategori..." />
-                <marker date="1464731545426" expanded="true" signature="6926:6962" placeholder="SELECT * FRO..adresler..." />
-                <marker date="1464731545426" expanded="true" signature="6926:6978" placeholder="SELECT * FRO..adresler..." />
-                <marker date="1464731545426" expanded="true" signature="7545:8193" placeholder="..." />
-                <marker date="1464731545426" expanded="true" signature="7545:8244" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="1331:1352" placeholder="SELECT COUNT..etkinlik..." />
+                <marker date="1464819434544" expanded="true" signature="1331:1360" placeholder="SELECT COUNT..kategori..." />
+                <marker date="1464819434544" expanded="true" signature="1602:1679" placeholder="SELECT * FRO..etkinlik..." />
+                <marker date="1464819434544" expanded="true" signature="2156:2167" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="2673:2709" placeholder="SELECT * FRO..kategori..." />
+                <marker date="1464819434544" expanded="true" signature="2673:2713" placeholder="SELECT * FRO..kategori..." />
+                <marker date="1464819434544" expanded="true" signature="2934:3018" placeholder="SELECT COUNT..etkinlik..." />
+                <marker date="1464819434544" expanded="true" signature="3320:4567" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="3392:4518" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="3493:4465" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="3530:3586" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="3530:3650" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="3530:4167" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="3599:3627" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="3748:4110" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="3913:3977" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="3913:4049" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="4241:4306" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="4241:4311" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="4241:4368" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="4241:4461" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="4355:4365" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="4810:4827" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="4828:5022" placeholder="..." />
+                <marker date="1464819434544" expanded="true" signature="4910:4927" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -298,7 +202,6 @@
         <option value="$PROJECT_DIR$/eventory/index.html" />
         <option value="$PROJECT_DIR$/eventory/islem.php" />
         <option value="$PROJECT_DIR$/eventory/page_404.html" />
-        <option value="$PROJECT_DIR$/eventory/index.php" />
         <option value="$PROJECT_DIR$/eventory/cikis.php" />
         <option value="$PROJECT_DIR$/eventory/logout.php" />
         <option value="$PROJECT_DIR$/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js" />
@@ -321,6 +224,7 @@
         <option value="$PROJECT_DIR$/eventory/profile.php" />
         <option value="$PROJECT_DIR$/eventory/show_event.php" />
         <option value="$PROJECT_DIR$/eventory/search_event.php" />
+        <option value="$PROJECT_DIR$/eventory/index.php" />
       </list>
     </option>
   </component>
@@ -364,8 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -398,8 +300,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventory-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventory-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,15 +347,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\eventory-project\eventory" />
-      <recent name="C:\xampp\htdocs\eventory-project\eventory\images\events" />
-      <recent name="C:\xampp\htdocs\gentelella\eventory" />
-      <recent name="C:\xampp\htdocs\gentelella\eventory\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\eventory-project\eventory\images\events" />
       <recent name="C:\xampp\htdocs\gentelella\eventory" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\eventory-project\eventory\images\events" />
+      <recent name="C:\xampp\htdocs\eventory-project\eventory" />
+      <recent name="C:\xampp\htdocs\gentelella\eventory" />
+      <recent name="C:\xampp\htdocs\gentelella\eventory\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -512,7 +434,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17715959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1127,9 +1049,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1142,6 +1061,9 @@
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eventory/.htaccess">
@@ -1160,13 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27659574">
           <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eventory/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5757575">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1239,26 +1154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eventory/buy_ticket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="52" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="52" />
-          <folding>
-            <marker date="1464647647537" expanded="true" signature="1559:1631" placeholder="INSERT INTO bilet..." />
-            <marker date="1464647647537" expanded="true" signature="1559:1673" placeholder="INSERT INTO bilet..." />
-            <marker date="1464647647537" expanded="true" signature="1965:2001" placeholder="SELECT * FRO..etkinlik..." />
-            <marker date="1464647647537" expanded="true" signature="2566:2684" placeholder="..." />
-            <marker date="1464647647537" expanded="true" signature="2566:2855" placeholder="..." />
-            <marker date="1464647647537" expanded="true" signature="2566:2993" placeholder="..." />
-            <marker date="1464647647537" expanded="true" signature="2566:3346" placeholder="..." />
-            <marker date="1464647647537" expanded="true" signature="3043:3316" placeholder="..." />
-            <marker date="1464647647537" expanded="true" signature="3115:3285" placeholder="..." />
-            <marker date="1464647647537" expanded="true" signature="3537:4905" placeholder="..." />
-            <marker date="1464647647537" expanded="true" signature="4822:4840" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eventory/katilimcilar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1286,9 +1181,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/eventory/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eventory/buy_ticket.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13138686">
+          <caret line="109" column="52" selection-start-line="109" selection-start-column="52" selection-end-line="109" selection-end-column="52" />
+          <folding>
+            <marker date="1464647647537" expanded="true" signature="1559:1631" placeholder="INSERT INTO bilet..." />
+            <marker date="1464647647537" expanded="true" signature="1559:1673" placeholder="INSERT INTO bilet..." />
+            <marker date="1464647647537" expanded="true" signature="1965:2001" placeholder="SELECT * FRO..etkinlik..." />
+            <marker date="1464647647537" expanded="true" signature="2566:2684" placeholder="..." />
+            <marker date="1464647647537" expanded="true" signature="2566:2855" placeholder="..." />
+            <marker date="1464647647537" expanded="true" signature="2566:2993" placeholder="..." />
+            <marker date="1464647647537" expanded="true" signature="2566:3346" placeholder="..." />
+            <marker date="1464647647537" expanded="true" signature="3043:3316" placeholder="..." />
+            <marker date="1464647647537" expanded="true" signature="3115:3285" placeholder="..." />
+            <marker date="1464647647537" expanded="true" signature="3537:4905" placeholder="..." />
+            <marker date="1464647647537" expanded="true" signature="4822:4840" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eventory/search_event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06386861">
+          <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+          <folding>
+            <marker date="1464731545426" expanded="true" signature="5245:5312" placeholder="SELECT * FRO..etkinlik..." />
+            <marker date="1464731545426" expanded="true" signature="5443:5465" placeholder="SELECT * FRO..etkinlik..." />
+            <marker date="1464731545426" expanded="true" signature="5778:5812" placeholder="SELECT * FRO..uyeler..." />
+            <marker date="1464731545426" expanded="true" signature="5778:5814" placeholder="SELECT * FRO..uyeler..." />
+            <marker date="1464731545426" expanded="true" signature="5778:5822" placeholder="SELECT * FRO..uyeler..." />
+            <marker date="1464731545426" expanded="true" signature="6304:6340" placeholder="SELECT * FRO..kategori..." />
+            <marker date="1464731545426" expanded="true" signature="6926:6962" placeholder="SELECT * FRO..adresler..." />
+            <marker date="1464731545426" expanded="true" signature="6926:6978" placeholder="SELECT * FRO..adresler..." />
+            <marker date="1464731545426" expanded="true" signature="7545:8193" placeholder="..." />
+            <marker date="1464731545426" expanded="true" signature="7545:8244" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/eventory/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.65384614">
           <caret line="73" column="43" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
           <folding>
             <marker date="1464643836440" expanded="true" signature="229:266" placeholder="SELECT * FRO..uyeler..." />
@@ -1397,29 +1339,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eventory/config.php">
+    <entry file="file://$PROJECT_DIR$/eventory/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eventory/search_event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.062043797">
-          <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.59671533">
+          <caret line="84" column="60" selection-start-line="84" selection-start-column="60" selection-end-line="84" selection-end-column="60" />
           <folding>
-            <marker date="1464731545426" expanded="true" signature="5245:5312" placeholder="SELECT * FRO..etkinlik..." />
-            <marker date="1464731545426" expanded="true" signature="5443:5465" placeholder="SELECT * FRO..etkinlik..." />
-            <marker date="1464731545426" expanded="true" signature="5778:5812" placeholder="SELECT * FRO..uyeler..." />
-            <marker date="1464731545426" expanded="true" signature="5778:5814" placeholder="SELECT * FRO..uyeler..." />
-            <marker date="1464731545426" expanded="true" signature="5778:5822" placeholder="SELECT * FRO..uyeler..." />
-            <marker date="1464731545426" expanded="true" signature="6304:6340" placeholder="SELECT * FRO..kategori..." />
-            <marker date="1464731545426" expanded="true" signature="6926:6962" placeholder="SELECT * FRO..adresler..." />
-            <marker date="1464731545426" expanded="true" signature="6926:6978" placeholder="SELECT * FRO..adresler..." />
-            <marker date="1464731545426" expanded="true" signature="7545:8193" placeholder="..." />
-            <marker date="1464731545426" expanded="true" signature="7545:8244" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="1331:1352" placeholder="SELECT COUNT..etkinlik..." />
+            <marker date="1464819434544" expanded="true" signature="1331:1360" placeholder="SELECT COUNT..kategori..." />
+            <marker date="1464819434544" expanded="true" signature="1602:1679" placeholder="SELECT * FRO..etkinlik..." />
+            <marker date="1464819434544" expanded="true" signature="2156:2167" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="2673:2709" placeholder="SELECT * FRO..kategori..." />
+            <marker date="1464819434544" expanded="true" signature="2673:2713" placeholder="SELECT * FRO..kategori..." />
+            <marker date="1464819434544" expanded="true" signature="2934:3018" placeholder="SELECT COUNT..etkinlik..." />
+            <marker date="1464819434544" expanded="true" signature="3320:4567" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="3392:4518" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="3493:4465" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="3530:3586" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="3530:3650" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="3530:4167" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="3599:3627" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="3748:4110" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="3913:3977" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="3913:4049" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="4241:4306" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="4241:4311" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="4241:4368" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="4241:4461" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="4355:4365" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="4810:4827" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="4828:5022" placeholder="..." />
+            <marker date="1464819434544" expanded="true" signature="4910:4927" placeholder="..." />
           </folding>
         </state>
       </provider>

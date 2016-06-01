@@ -41,121 +41,57 @@ require_once "config.php";
                                   <div class="row">
 
                                       <p><h4>Vitrindekiler</h4></p>
+                                      <?php
+                                      $y=mysqli_query($conn,"SELECT COUNT(*) FROM kategori");
+                                      $y=mysqli_fetch_array($y);
+                                      $y=$y[0];
+                                      for($i=1;$i<=$y;$i++) {
+                                              $sqlKategori1 = "SELECT * FROM etkinlik WHERE kat_id={$i} ORDER BY etk_bas_tarihi DESC LIMIT 1";
+                                              $rsKategori1 = mysqli_query($conn, $sqlKategori1);
+                                              $row = mysqli_fetch_array($rsKategori1);
+                                              $ucret = $row['etk_ucreti'] . " " . $row['etk_para_birimi'] . " <i class=\"fa fa-try\"></i>";
+                                              if ($row['etk_ucreti'] == 0) {
+                                                  $ucret = "<span style='color: red;'>Ücretsiz !</span>";
+                                              }
+                                              if (strcmp($row['etk_afis'], "default_afis.png") == 0) {
+                                                  $afis = "yapim_asamasinda.png";
+                                              } else {
+                                                  $afis = $row['etk_afis'];
+                                              }
 
-                                      <div class="col-md-4">
-                                          <div class="thumbnail">
-                                              <div class="image view view-first">
-                                                  <img style="width: 100%; display: block;" src="images/4.jpg" alt="image">
-                                                  <div class="mask">
-                                                      <p>Your Text</p>
-                                                      <div class="tools tools-bottom">
-                                                          <a href="#"><i class="fa fa-link"></i></a>
-                                                          <a href="#"><i class="fa fa-pencil"></i></a>
-                                                          <a href="#"><i class="fa fa-times"></i></a>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="caption">
-                                                  <p>Snow and Ice Incoming for the South</p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="thumbnail">
-                                              <div class="image view view-first">
-                                                  <img style="width: 100%; display: block;" src="images/4.jpg" alt="image">
-                                                  <div class="mask">
-                                                      <p>Your Text</p>
-                                                      <div class="tools tools-bottom">
-                                                          <a href="#"><i class="fa fa-link"></i></a>
-                                                          <a href="#"><i class="fa fa-pencil"></i></a>
-                                                          <a href="#"><i class="fa fa-times"></i></a>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="caption">
-                                                  <p>Snow and Ice Incoming for the South</p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="thumbnail">
-                                              <div class="image view view-first">
-                                                  <img style="width: 100%; display: block;" src="images/4.jpg" alt="image">
-                                                  <div class="mask">
-                                                      <p>Your Text</p>
-                                                      <div class="tools tools-bottom">
-                                                          <a href="#"><i class="fa fa-link"></i></a>
-                                                          <a href="#"><i class="fa fa-pencil"></i></a>
-                                                          <a href="#"><i class="fa fa-times"></i></a>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="caption">
-                                                  <p>Snow and Ice Incoming for the South</p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="thumbnail">
-                                              <div class="image view view-first">
-                                                  <img style="width: 100%; display: block;" src="images/4.jpg" alt="image">
-                                                  <div class="mask">
-                                                      <p>Your Text</p>
-                                                      <div class="tools tools-bottom">
-                                                          <a href="#"><i class="fa fa-link"></i></a>
-                                                          <a href="#"><i class="fa fa-pencil"></i></a>
-                                                          <a href="#"><i class="fa fa-times"></i></a>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="caption">
-                                                  <p>Snow and Ice Incoming for the South</p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="col-md-4">
-                                          <div class="thumbnail">
-                                              <div class="image view view-first">
-                                                  <img style="width: 100%; display: block;" src="images/4.jpg" alt="image">
-                                                  <div class="mask">
-                                                      <p>Your Text</p>
-                                                      <div class="tools tools-bottom">
-                                                          <a href="#"><i class="fa fa-link"></i></a>
-                                                          <a href="#"><i class="fa fa-pencil"></i></a>
-                                                          <a href="#"><i class="fa fa-times"></i></a>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                              <div class="caption">
-                                                  <p>Snow and Ice Incoming for the South</p>
-                                              </div>
-                                          </div>
-                                      </div>
+                                          $rsKatAd=mysqli_query($conn,"SELECT * FROM kategori WHERE kat_id={$i}");
+                                          $rowKadAd=mysqli_fetch_array($rsKatAd);
+                                          $kat=$rowKadAd['kat_ad'];
 
-
-                                      <div class="col-md-4">
-                                          <div class="thumbnail">
-                                              <div class="image view view-first">
-                                                  <img style="width: 100%; display: block;" src="images/yapim_asamasinda.png" alt="image">
-                                                  <div class="mask no-caption">
-                                                      <div class="tools tools-bottom">
-                                                          <a href="#"><i class="fa fa-link"></i></a>
-                                                          <a href="#"><i class="fa fa-pencil"></i></a>
-                                                          <a href="#"><i class="fa fa-times"></i></a>
+                                          $xx=mysqli_query($conn,"SELECT COUNT(*) FROM etkinlik WHERE kat_id={$i} ORDER BY etk_bas_tarihi DESC LIMIT 1");
+                                          $xx=mysqli_fetch_array($xx);
+                                          $xx=$xx[0];
+                                          if($xx!=0) {
+                                              echo "
+                                          <div class=\"col-md-3\">
+                                              <div class=\"thumbnail\">
+                                                  <a href=\"show_event.php?event={$row['etk_id']}\"><div class=\"image view view-first\">
+                                                      <img style=\"width: 100%; display: block;\" src=\"images/events/{$afis}\" alt=\"image\">
+                                                      <div class=\"mask\">
+                                                          <p>{$kat}</p>
+                                                          <div class=\"tools tools-bottom\">
+                                                              {$ucret}
+                                                          </div>
                                                       </div>
                                                   </div>
-                                              </div>
-                                              <div class="caption">
-                                                  <p><strong>Image Name</strong>
-                                                  </p>
-                                                  <p>Snow and Ice Incoming</p>
+                                                  <div class=\"caption\">
+                                                      <p>&nbsp;{$row['etk_ad']} <span class='pull-right' style='color: red'>({$row['etk_bas_tarihi']})</span></p>
+
+                                                  </div></a>
                                               </div>
                                           </div>
-                                      </div>
-                                      <div class="col-md-4"></div>
-                                      <div class="col-md-4"></div>
-                                      <div class="col-md-4" style="text-align: right">
+                                          ";
+                                          }
+                                      }
+
+                                      ?>
+
+                                      <div class="pull-right" style="text-align: right">
                                           <a  href="search_event.php"><p style="font-size: larger" >Daha fazlası için Tıklamanız yeterli...</p> </a>
                                       </div>
                                   </div>

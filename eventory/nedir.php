@@ -37,10 +37,14 @@ require_once "config.php";
                                     <div class="clearfix"></div>
                                 </div>
                                 <p>
-                                        Eventory projemiz gezi,sahne sanatları,seminer gibi kategorilere ayrılarak kullanıcıların aradığı etkinliği en kolay
-                                    şekilde bulmasına yardımcı olur.
-                                    etkinliğe kaydolma,bilet satın alma ve bir de bireysel veya kurumsal olarak etkinlik oluşturabilmektedir.
+                                    Eventory.com.tr konferans, eğitim, sahne sanatları, fuar, gezi gibi birçok türde etkinlikler bulabileceğiniz bir platformdur.
+
                                 </p>
+
+                                <ol>
+                                    <li><b>Kişi ve markaları takip edin:</b> Etkinliğini kaçırmak istemediğiniz kişileri, grupları ve organizatör firmalarını takip edin, etkinliklerini kaçırmayın.(Projenin ilerleyen sürümlerinde)</li>
+                                    <li><b>Etkinlik önerileri alın :</b> "Pop müzik, Asp.Net, Biyoteknoloji, Finans” gibi birçok konudan ilgi alanınıza girenleri seçin. İlgi alanınıza giren bir etkinlik olduğunda size haber verelim.(Projenin ilerleyen sürümlerinde) </li>
+                                    </ol>
                             </div>
                             <div class="col-md-3">
                                 <div class="x_title">
@@ -56,22 +60,21 @@ require_once "config.php";
                                     <h3 style="color:#90111A">Kayıtlı kullanıcılar için</h3>
                                     <div class="clearfix"></div>
                                 </div>
-                                <p>Sistemde kayıtlı kullanıcılarımıza bazı özel avantajlardan yararlanabilirler.</p>
+                                <p></p>
                                     <div class="bs-glyphicons">
                                         <ul class="bs-glyphicons-list">
                                             <li>
                                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><span class="glyphicon-class">Ücretsiz Etkinlik Ekleme</span>
                                             </li>
                                             <div class="col-md-5">
-                                            <p>Oluşturmuş olunan etkinliği sitemize ekleyerek diğer kullanıcıların görebilmesini sağlayabilirsiniz.</p>
+                                            <p>Organize ettiğiniz etkinliğinizi hedef kitlenize ücretsiz olarak duyurmak için sitemize eklemeniz yeterli.</p>
                                             </div>
                                             <li>
                                                 <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
                                                 <span class="glyphicon-class">Bilet Satış Hizmeti</span>
                                             </li>
                                             <div class="col-md-4">
-                                                <p>Ücretli olan etkinliklere sitemizde aktif bulunan ödeme sistemini kullanabilip biletinizi hemen dakikalar içinde
-                                                    alabilirsiniz.</p>
+                                                <p>Eventory.com.tr altyapısını kullanarak bilet satışı yapmak istiyorsanız tek yapmanız gereken ücretini belirlemek!(Paypal hizmetleri aktif olmadığı için şu anda bu hizmeti veremiyoruz.)</p>
                                             </div>
                                         </ul>
                                     </div>
@@ -82,7 +85,7 @@ require_once "config.php";
                                             <span class="glyphicon-class">Katılımcı Kaydı Alma</span>
                                         </li>
                                         <div class="col-md-5">
-                                            <p>Katılımcı formu ile katılımcılardan ad,soyad,tel gibi bilgileri almanızı sağlar.</p>
+                                            <p>Katılımcı listesi özelliği, etkinliğinize katılan katılımcılardan isim, telefon, mail gibi bilgileri almanızı sağlar.</p>
                                         </div>
                                     </ul>
                                 </div>

@@ -71,43 +71,6 @@ require_once "config.php";
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr class="odd" role="row">
-                                      <td class="sorting_1" tabindex="0">Airi</td>
-                                      <td>Satou</td>
-                                      <td>Accountant</td>
-                                      <td>Tokyo</td>
-                                      <td>Tokyo</td>
-                                      <td>33</td>
-                                      <td>5407</td>
-                                      <td>a.satou@datatables.net</td>
-                                    </tr><tr class="even" role="row">
-                                      <td tabindex="0" class="sorting_1">Bradley</td>
-                                      <td>Greer</td>
-                                      <td>Software Engineer</td>
-                                      <td>London</td>
-                                      <td>41</td>
-                                      <td>Tokyo</td>
-                                      <td>2558</td>
-                                      <td>b.greer@datatables.net</td>
-                                    </tr><tr class="even" role="row">
-                                      <td tabindex="0" class="sorting_1">Bradley</td>
-                                      <td>Greer</td>
-                                      <td>Software Engineer</td>
-                                      <td>London</td>
-                                      <td>Tokyo</td>
-                                      <td>41</td>
-                                      <td>2558</td>
-                                      <td>b.greer@datatables.net</td>
-                                    </tr><tr class="even" role="row">
-                                      <td tabindex="0" class="sorting_1">Bradley</td>
-                                      <td>Greer</td>
-                                      <td>Software Engineer</td>
-                                      <td>London</td>
-                                      <td>Tokyo</td>
-                                      <td>41</td>
-                                      <td>2558</td>
-                                      <td>b.greer@datatables.net</td>
-                                    </tr>
                                     <?php
 
                                     $sql="";

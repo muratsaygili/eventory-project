@@ -8,6 +8,34 @@
 require_once "functions.php";
 require_once "config.php";
 
+if ($_POST){
+
+    $res=mysqli_query($conn,"SHOW TABLE STATUS FROM eventory LIKE 'user_message' "); //son AI değerini aldık
+    $row=mysqli_fetch_array($res);
+    $mess_id=$row['Auto_increment'];
+    $fna =  $_POST['fname'];
+    $lna = $_POST['lname'];
+    $ema=$_POST['email'];
+    $numara=$_POST['no'];
+    $webs=$_POST['website'];
+    $mess=$_POST['message'];
+    $sql="INSERT INTO user_message(message_id,fname,lname,email,no,website,message)
+ VALUES ('$mess_id','$fna','$lna','$ema','$numara','$webs','$mess')";
+    $rs=mysqli_query($conn,$sql);
+    if ($rs){
+        echo "mesaj iletildi ...";
+        header("refresh:1; url=iletisim.php");
+    }
+    else{
+        echo "mesajınız iletilmedi.!!!";
+        header("refresh:1; url=page_404.php");
+    }
+}
+else{
+}
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,61 +62,58 @@ require_once "config.php";
 
                             <div class="x_content">
 
-                                <form class="form-horizontal form-label-left" novalidate="">
-
-
-                                    <span class="section" style="color: #90111A">İletişim Formu</span>
-
-                                    <div class="item form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Ad   <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" required="required" type="text">
+                                <div id="iletisim" class="form">
+                                    <form  validate="" action="iletisim.php" method="post" class="form-horizontal form-label-left" >
+                                        <span class="section" style="color: #90111A">İletişim Formu</span>
+                                        <div class="item form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" >Ad<span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input id="fname" class="form-control col-md-7 col-xs-12" name="fname" required="required" type="text">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Soyad   <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" required="required" type="text">
+                                        <div class="item form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Soyad<span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input id="lname" class="form-control col-md-7 col-xs-12"  name="lname" required="required" type="text">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">E-mail <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
+                                        <div class="item form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">E-mail<span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input class="form-control col-md-7 col-xs-12" type="email" id="email" required="required" name="email" >
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Telefon <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="number" id="number" name="number" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
+                                        <div class="item form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" >Telefon <span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input type="tel"  name="no" length="10" maxlength="10" required="required"  class="form-control col-md-7 col-xs-12">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Web sayfa URL'niz
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="url" id="website" name="website" required="required" placeholder="www.websiteniz.com" class="form-control col-md-7 col-xs-12">
+                                        <div class="item form-group" >
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12" >Web sayfa URL'niz</label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <input type="url" id="website" name="website" placeholder="https://www.websiteniz.com" class="form-control col-md-7 col-xs-12">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item form-group">
-                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">Mesajınız <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <textarea id="mesaj" required="required" name="mesaj" placeholder="Lütfen mesajınızı kısa bir şekilde yazın" class="form-control col-md-7 col-xs-12"></textarea>
+                                        <div class="item form-group">
+                                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Mesajınız <span class="required">*</span>
+                                            </label>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <textarea id="message" required="required" name="message" placeholder="Lütfen mesajınızı kısa bir şekilde yazın" class="form-control col-md-7 col-xs-12"></textarea>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="ln_solid"></div>
-                                    <div class="form-group">
-                                        <div class="col-md-6 col-md-offset-3">
-
-                                            <button id="send" type="submit" class="btn btn-success">Gönder</button>
+                                        <div class="ln_solid"></div>
+                                        <div class="form-group">
+                                            <div class="col-md-6 col-md-offset-3">
+                                                <button type="submit" class="btn btn-success">Gönder</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

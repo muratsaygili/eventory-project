@@ -32,17 +32,23 @@ require_once "config.php";
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="x_panel" style="height:600px;">
 
-                            <div class="col-md-9">
+                            <div class="col-md-6">
                                 <div class="x_title">
                                     <h3 style="color:#90111A">Hakkımızda</h3>
                                     <div class="clearfix"></div>
                                     
                                 </div>
                                 <p>
-                                    Eventory.com 2016 yılının başlarında geliştirmeye başladığımız ve halen  yapımı sürmekte olan
-                                    genel olarak bir etkinliği sanal ortamda yaymak için kullanılabilecek bir web sitesidir. Proje temel
-                                    çıkarma amacımız yazılım mühendisliği dersi için verilmiş olan grup halinde geliştirme projesine yöneliktir.
-                                    
+                                    Eventory.com 2016 yılının başlarında geliştirmeye başlatıldı.
+                                    Projenin temel amaçlarından biri etkinliği sanal ortamda yaymak amacı için oluşturuldu. Sistemde üyeliği olan her kişiye etkinlik oluşturma hakkı sunulmaktadır.
+
+                                </p>
+                                <p> Üye olan kişi profil sayfasından oluşturmuş olduğu etkinlikleri ve katılmış olduğu etkinlikleri görebilmektedir.
+                                Projemizde herhangi bir etkinliği arama işlemi yapabilir ve etkinlik hakkında bilgi sahibi olabilir.
+                                </p>
+                                <p>
+                                    Projemiz hala gelişme aşamasındadır. Herhangi bir soru ya da sorunla karşılaşıldığında iletişim sayfamızdan
+                                    bizlere ulaşabilir ve mesajınızı iletebilirsiniz.
                                 </p>
                             </div>
 

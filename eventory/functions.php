@@ -191,7 +191,7 @@ function getMenu(){
             <!-- menu profile quick info -->
             <div class=\"profile\">
               <div class=\"profile_pic\">
-                <img src=\"images/user.png\" alt=\"...\" class=\"img-circle profile_img\">
+                <a href='profile.php'><img src=\"images/user.png\" alt=\"...\" class=\"img-circle profile_img\"></a>
               </div>
               <div class=\"profile_info\">
                 <span>Hoşgeldin,</span>
@@ -210,40 +210,22 @@ function getMenu(){
                   <li><a href=\"index.php\"><i class=\"fa fa-home\"></i> Anasayfa </a>
 
                   </li>
-                  <li><a><i class=\"fa fa-edit\"></i> Yaklaşan Etkinlikler <span class=\"fa fa-chevron-down\"></span></a>
+                  <li><a><i class=\"fa fa-edit\"></i> Yaklaşan Etkinlikler <span class=\"fa fa-chevron-down\"></span><span class=\"label label-success pull-right\">Coming Soon</span></a>
                     <ul class=\"nav child_menu\">
-                      <li><a href=\"form.html\">General Form</a>
+                      <li><a href=\"example.php\">Boş Sayfa</a>
                       </li>
-                      <li><a href=\"form_advanced.html\">Advanced Components</a>
+                      <li><a href=\"example.php\">Boş Sayfa</a>
                       </li>
-                      <li><a href=\"form_validation.html\">Form Validation</a>
+                      <li><a href=\"example.php\">Boş Sayfa</a>
                       </li>
-                      <li><a href=\"form_wizards.html\">Form Wizard</a>
-                      </li>
-                      <li><a href=\"form_upload.html\">Form Upload</a>
-                      </li>
-                      <li><a href=\"form_buttons.html\">Form Buttons</a>
+                      <li><a href=\"example.php\">Boş Sayfa</a>
                       </li>
                     </ul>
                   </li>
-                  <li><a><i class=\"fa fa-sitemap\"></i> Kategoriler <span class=\"fa fa-chevron-down\"></span></a>
-                    <ul class=\"nav child_menu\">
-                        <li><a href=\"#level1_1\">Level One</a>
-                        <li><a>Level One<span class=\"fa fa-chevron-down\"></span></a>
-                          <ul class=\"nav child_menu\">
-                            <li class=\"sub_menu\"><a href=\"level2.html\">Level Two</a>
-                            </li>
-                            <li><a href=\"#level2_1\">Level Two</a>
-                            </li>
-                            <li><a href=\"#level2_2\">Level Two</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a href=\"#level1_2\">Level One</a>
-                        </li>
-                    </ul>
+                  <li><a href='profile.php'><i class=\"fa fa-ticket\"></i> Biletlerim <span class=\"fa fa-chevron-down\"></span></a>
+
                   </li>
-                  <li><a href=\"search_event.php\"><i class=\"fa fa-search\"></i> Etkinlik Ara <span class=\"label label-success pull-right\">Coming Soon</span></a>
+                  <li><a href=\"search_event.php\"><i class=\"fa fa-search\"></i> Etkinlik Ara </a>
                   </li>
                 </ul>
               </div>
@@ -298,7 +280,7 @@ function getFooter(){
             </div>
             <div style=\"background-color: black\" class=\"container\">
                 <div class=\"copy text-center\">
-                Copyright 2016 &copy <a href=\"#\">Eventory</a>
+                Copyright 2016 &copy <a href=\"index.php\">Eventory</a>
             </div>
       </div>
         <div class=\"clearfix\"></div>

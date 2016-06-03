@@ -10,8 +10,6 @@ require_once "config.php";
 
 
 if($_POST){
-    echo "post var";
-
 
     global $uye_id;
 
@@ -26,12 +24,20 @@ if($_POST){
     $etk_ad=$_POST['etk_ad'];
     $etk_detay=$_POST['etk_detay'];
     $etk_kapasite=$_POST['etk_kapasite'];
+    $etk_afis="default_afis.png";
 
-    if($_POST['etk_afis']==""){
-        $etk_afis="default_afis.png";
-    }else{
-        $etk_afis=$_POST['etk_afis'];
-    }
+        ## Uzantı Kontrollerim
+        $uzanti=array('image/jpeg','image/jpg','image/png','image/x-png','image/gif');
+        ## Aynı Dizinde Bulunan Resimler Klasörüne Kaydet
+        $dizin="images/events";
+        if(in_array(strtolower($_FILES['etk_afis']['type']),$uzanti)){
+            $etk_afis=$etk_ad."-".$etk_id;
+            move_uploaded_file($_FILES['etk_afis']['tmp_name'],"./$dizin/{$etk_afis}.jpg");
+            echo "Başarılı !";
+        }else{
+            echo "Başarısız !";
+        }
+
 
     $kat_id=$_POST['kat_id'];
     $etk_ucreti=$_POST['etk_ucreti'];
@@ -65,6 +71,7 @@ if($_POST){
         header("refresh:1; url=search_event.php");
     }else{
         echo "HATA!! Etkinlik oluşturulamadı !";
+        echo mysqli_error($conn);
         header("refresh:1; url=create_event.php");
     }
 
@@ -151,7 +158,7 @@ if($_POST){
                                     </li>
                                 </ul>
                                 <div>
-                                    <form class="form-horizontal form-label-left" action="create_event.php" method="post">
+                                    <form class="form-horizontal form-label-left" action="create_event.php" method="post" enctype="multipart/form-data">
                                 <div id="step-1" class="form-group">
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="etk_ad">Etkinlik Adı </label>
